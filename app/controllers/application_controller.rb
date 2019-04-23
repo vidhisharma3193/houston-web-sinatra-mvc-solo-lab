@@ -9,6 +9,7 @@ class ApplicationController < Sinatra::Base
       end
 
       get '/dogs' do
+        @array = ["Who's a good dog?", "Sit!", "Speak!", "THEY'RE ALL SO CUTE!!!!"]
         @puppy = Puppy.all
         erb :puppies
       end
