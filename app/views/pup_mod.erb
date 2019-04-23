@@ -1,0 +1,10 @@
+<h1>GO FETCH!!!</h1>
+<form action="/dogs/<%=@puppy.id%>" method="post">
+<input type="hidden" name="_method" value="patch"/>
+<label for="name">Name</label>
+<input type="text" name="name" value="<%=@puppy.name %>"/>
+<div>
+<label for="breed">Breed</label>
+<input type="text" name="breed" value="<%=@puppy.breed %>"/>
+<input type="submit" value="BARK!"/>
+</form> 

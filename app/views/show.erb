@@ -1,0 +1,15 @@
+<h1>How aDoggable</h1>
+
+<h3> <%= @puppy.name %> </h3>
+<h4> <%= @puppy.breed %> </h4>
+
+<p> How can you say no to that face?</p>
+
+<form action="/dogs/<%=@puppy.id %>/mod">
+    <input type="submit" value="Make changes?"/>
+</form>
+
+<form action="/dogs/<%= @puppy.id%>" method="post">
+<input type="hidden" name="_method" value="delete" />
+<input type="submit" value="Are you sure that's a dog?.." />
+</form>
