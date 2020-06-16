@@ -1,0 +1,45 @@
+<h1>Who let the dogs out?!</h1>
+<h2><%= @array.sample%></h2>
+<% @puppy.each do |dog| %> 
+    <a href="/dogs/<%=dog.id%>">
+    <div>
+    <%= dog.name %>
+    <div>
+    </a>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%# <h1> All the Books </h1>
+<% @books.each do |book| %>
+    <%# <a href="/books/<%= book.id%>
+    <%# <div>
+    <%= book.title %>
+    <%# <div> %>
+    <%# </a> %> 
+<%# <% end %> 
+ <%# %>
